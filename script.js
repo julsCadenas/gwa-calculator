@@ -44,7 +44,7 @@ $(document).ready(function() {
             // alert("Your GWA is: " + gwa.toFixed(4));
             $(".gwaResult").html("<h2 class='result'>Your GWA is: " + gwa.toFixed(4) + "</h2>");
         } else {
-            alert("Please enter valid grades and units.");
+            alert("Please enter your grades and units.");
         }
     });
 
