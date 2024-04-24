@@ -1,0 +1,130 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #06060A;
+}
+
+.title {
+    text-align: center;
+    font-size: xx-large;
+}
+
+/* nav bar styling starting here */
+
+.navbar {
+    background-color: #EEEEEE;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    display: flex;
+}
+
+.navbar:hover {
+    background-color: #bdbdbd;
+}
+  
+.navbar a {
+    color: #06060A;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.name {
+    font-weight: bold;
+    margin-top: 2.5px;
+    margin-left: 10px;
+    margin-right: auto;
+    transition: color 0.3s ease;
+}
+
+#github, #linkedin {
+    font-size: 32px;
+    transition: color 0.3s ease;
+}
+
+#linkedin {
+    margin-right: 10px;
+}
+
+.name:hover ,#github:hover, #linkedin:hover {
+    color: #8d7a80;
+}
+
+/* end of navbar styling */
+
+
+/* textboxes styling */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subjects {
+    margin-right: 10px;
+}
+
+.gradeBoxes input, .unitBoxes input {
+    font-family: "Poppins";
+    height: 30px;
+    border-radius: 8px;
+    text-align: center;
+    border-color: #e6e1e4;
+}
+
+.gradeBoxes input {
+    font-weight: 600;
+    width: 150px;
+}
+
+.unitBoxes input {
+    font-weight: 600;
+    margin-left: 5px;
+    width: 100px;
+}
+
+/* end of textbox styling */
+
+
+/* button styling */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.buttons button {
+    background-color: #e6e1e4;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 5px;
+    height: 40px;
+    width: 200px;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s ease;
+
+}
+
+.buttons button:hover {
+    background-color: #bdacb1;
+    color: #fcfbfc;
+}
+
+/* end of button styling */
