@@ -24,23 +24,26 @@
     </div>
 
     <div class="inputContainer">
-        <div class="subjects">
-            <h3>Subject 1</h3>
-        </div>
-        <div class="gradeBoxes">
-            <input type="number" placeholder="Final Grade" class="grade" id="grade">
-        </div>
-    
-        <div class="unitBoxes">
-            <input type="number" placeholder="Units" class="unit" id="unit">
+        <div class="inputRow">
+            <div class="subjects">
+                <h4>Subject 1</h4>
+            </div>
+            <div class="gradeBoxes">
+                <input type="number" placeholder="Final Grade" class="grade" id="grade">
+            </div>
+        
+            <div class="unitBoxes">
+                <input type="number" placeholder="Units" class="unit" id="unit">
+            </div>
         </div>
     </div>
 
     <div class="buttons">
-        <button class="subjBtn" onclick="addTextBox()">Add Subject</button>
+        <button class="subjBtn">Add Subject</button>
         <button class="computeBtn">Compute GWA</button>
     </div>
 
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
