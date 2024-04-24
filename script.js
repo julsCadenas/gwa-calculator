@@ -13,6 +13,7 @@ $(document).ready(function() {
         newSubjectDiv.append(newGradeBox);
         newSubjectDiv.append(newUnitBox);
         
+        newSubjectDiv.addClass('fadeIn');
     });
 
 /*
@@ -20,7 +21,7 @@ $(document).ready(function() {
     (Grade x Units) / (Total Units)
     Example:
         4   :   3 units
-        3.5 :   1 unit
+        3.5 :   1 units
 
     (4*3 + 3.5*1)/4
 */
@@ -43,6 +44,7 @@ $(document).ready(function() {
             var gwa = totalGradeUnits / totalUnits;
             // alert("Your GWA is: " + gwa.toFixed(4));
             $(".gwaResult").html("<h2 class='result'>Your GWA is: " + gwa.toFixed(4) + "</h2>");
+            $(".gwaResult").addClass('fadeIn')
         } else {
             alert("Please enter your grades and units.");
         }

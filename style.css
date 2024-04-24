@@ -151,3 +151,24 @@ input[type=number] {
 }
 
 /* end of button styling */
+
+
+/* animations */
+
+.inputRow.fadeIn {
+    animation: fadeInAnimation 0.3s ease forwards;
+}
+
+.gwaResult.fadeIn {
+    animation: fadeInAnimation 0.3s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
