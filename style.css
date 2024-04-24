@@ -71,10 +71,17 @@ input[type=number] {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.subjects {
-    margin-right: 10px;
+.inputRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: -15px;
+}
+
+.subjects, .gradeBoxes, .unitBoxes {
+    margin-right: 5px;
 }
 
 .gradeBoxes input, .unitBoxes input {
@@ -105,7 +112,7 @@ input[type=number] {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .buttons button {
