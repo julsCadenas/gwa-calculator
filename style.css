@@ -11,6 +11,15 @@ body {
     margin-bottom: -30px;
 }
 
+.gwaResult {
+    font-family: "Poppins";
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
 /* nav bar styling starting here */
 
 .navbar {
