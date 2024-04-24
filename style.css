@@ -9,6 +9,7 @@ body {
     font-size: xx-large;
     margin-top: -20px;
     margin-bottom: -30px;
+    color: #06060A;
 }
 
 .gwaResult {
@@ -141,6 +142,7 @@ input[type=number] {
     border-radius: 8px;
     border: none;
     transition: background-color 0.3s ease;
+    color: #06060A;
 }
 
 .buttons button:hover {
