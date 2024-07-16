@@ -1,0 +1,54 @@
+$(document).ready(function() {
+    var subjectCount = 1; 
+    var grades = []; // Array to store grades
+    var units = [];  // Array to store units
+
+    $(".subjBtn").click(function() {
+        subjectCount++;
+
+        var newSubjectDiv = $("<div class='inputRow'><div class='subjects'><h4>Subject " + subjectCount + "</h4></div></div>");
+        var newGradeBox = $("<div class='gradeBoxes'><input type='number' placeholder='Grade' class='grade'></div>");
+        var newUnitBox = $("<div class='unitBoxes'><input type='number' placeholder='Units' class='unit'></div>");
+
+        $(".inputContainer").append(newSubjectDiv);
+        newSubjectDiv.append(newGradeBox);
+        newSubjectDiv.append(newUnitBox);
+
+        // Add event listener to new input fields
+        newGradeBox.find('.grade').on('input', function() {
+            grades[subjectCount - 1] = parseFloat($(this).val()); // Store the grade in the grades array
+        });
+
+        newUnitBox.find('.unit').on('input', function() {
+            units[subjectCount - 1] = parseFloat($(this).val()); // Store the unit in the units array
+        });
+    });
+
+    $(".computeBtn").click(function() {
+        // Compute GWA here using the grades and units arrays
+        var totalGradeUnits = 0;
+        var totalUnits = 0;
+    
+        for (var i = 0; i < grades.length; i++) {
+            if (!isNaN(grades[i]) && !isNaN(units[i])) { // Check if grades and units are valid numbers
+                totalGradeUnits += grades[i] * units[i];
+                totalUnits += units[i];
+            } else {
+                console.log("Invalid grade or unit at index " + i);
+            }
+        }
+    
+        if (totalUnits === 0) {
+            alert("Please input at least one subject with non-zero units.");
+            return; // Prevent division by zero
+        }
+    
+        var gwa = totalGradeUnits / totalUnits;
+    
+        if (isNaN(gwa)) {
+            alert("Error: Unable to calculate GWA.");
+        } else {
+            alert("Your GWA is: " + gwa.toFixed(2));
+        }
+    });
+});
