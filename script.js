@@ -38,7 +38,7 @@ $(document).ready(function() {
                 totalGradeUnits += grade * units;
                 totalUnits += units;
             }
-        });
+    });
 
         if (totalUnits !== 0) {
             var gwa = totalGradeUnits / totalUnits;
